@@ -1,0 +1,212 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #E8D8F5, #D9C7F7); /* Lavender gradient background */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0.95);
+    animation: zoomIn 0.6s ease-in-out forwards;
+}
+
+/* Header */
+header {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5A4C8A; /* Deep Lavender color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #B0A3D6; /* Lighter lavender shade */
+    margin-top: 10px;
+}
+
+/* File Upload Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* File Input */
+input[type="file"] {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #D8B8F8; /* Light lavender border */
+    background-color: #F3E9F9; /* Light lavender background */
+    color: #6D4B8D; /* Slightly darker lavender text */
+    width: 80%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #F1D9F8;
+    border-color: #C6A6E6; /* Hover effect on input */
+}
+
+input[type="file"]:focus {
+    outline: none;
+    border-color: #9C8BFB; /* Focus effect */
+}
+
+/* Button */
+button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    background: #9C8BFB; /* Light lavender button */
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #8C75F2;
+    transform: translateY(-4px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+/* Output Section */
+.output-container {
+    text-align: center;
+    margin-top: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.output-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: 3px solid #EEE;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.output-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.output-container h2 {
+    font-size: 2rem;
+    color: #5A4C8A; /* Deep Lavender for the title */
+    margin-top: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.output-container h2:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.output-container p {
+    font-size: 1.1rem;
+    color: #9B8EC6; /* Subtle lavender color for text */
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.85);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.alert-success {
+    background-color: #E8D8F5; /* Lavender success background */
+    color: #5A4C8A; /* Dark lavender text */
+}
+
+.alert-error {
+    background-color: #FBE1E1; /* Light pink for error */
+    color: #D9534F; /* Dark red for error text */
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #B0A3D6; /* Light lavender footer text */
+}
+
+footer a {
+    color: #9C8BFB; /* Lavender link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #7A6BF2; /* Darker lavender link color */
+    text-decoration: underline;
+}

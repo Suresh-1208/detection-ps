@@ -1,0 +1,155 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00bcd4, #a5d6a7); /* Gradient from blue to mint */
+    color: #fff; /* White text for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* General page container */
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+
+/* Detection and History Containers */
+.detection-container,
+.history-container {
+    width: 60%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(229, 173, 230, 0.8); /* Light blue background (semi-transparent) */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    color: purple; /* Darker text color for readability */
+    margin-bottom: 20px;
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #6a1b9a; /* Purple for title text */
+}
+
+/* Form styling */
+.form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #00bcd4; /* Blue border */
+    border-radius: 5px;
+    background-color: rgba(169, 230, 206, 0.2); /* Mint background for input */
+    color: #333;
+}
+
+.button {
+    padding: 12px 20px;
+    background-color: #6a1b9a; /* Purple button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    background-color: #9c27b0; /* Lighter purple on hover */
+}
+
+/* Result text styling */
+.result {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+    color: #333; /* Darker result text */
+}
+
+/* Image container */
+.image-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Chart container */
+.chart-container {
+    margin-top: 30px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* History list styling */
+.history-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.history-item {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.history-item strong {
+    color: #6a1b9a; /* Purple for strong text in history */
+}
+
+/* Reset button styling */
+.reset-button {
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for Reset button */
+.reset-button:hover {
+    background-color: #d32f2f; /* Darker red */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detection-container,
+    .history-container {
+        width: 100%;
+    }
+}

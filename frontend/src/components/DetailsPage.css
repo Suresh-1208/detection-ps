@@ -1,0 +1,95 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background for the entire page */
+    color: #333;
+}
+
+/* General container for the details page with purple background */
+.details-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ad0da8; /* Purple background for the content container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header for the details page */
+.details-container h1 {
+    font-size: 2.5rem;
+    color: white; /* Orange color for the header text */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph styling for the content */
+.details-container p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: white; /* Orange text inside the purple container */
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Highlighted important text within the content */
+.details-container strong {
+    color: teal#ffd700; /* Gold color for highlighted text */
+    font-weight: bold;
+    background-color: rgba(255, 215, 0, 0.2); /* Light gold background for extra emphasis */
+}
+
+/* Highlighted text with background */
+.details-container .highlight {
+    background-color:   teal; /* Light gold background for entire text block */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* List styling for Technologies and Libraries */
+.details-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.details-container ul li {
+    font-size: 1rem;
+    color:  even teal; /* Orange color for list items */
+    margin: 10px 0;
+}
+
+/* Styling for the footer section */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #424242;
+    color:#ffa500; /* Orange color for footer text */
+    font-size: 0.9rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .details-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .details-container h1 {
+        font-size: 2rem;
+    }
+
+    .details-container p {
+        font-size: 0.9rem;
+    }
+
+    .details-container ul li {
+        font-size: 0.9rem;
+    }
+}

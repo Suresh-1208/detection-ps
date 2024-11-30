@@ -1,0 +1,38 @@
+.authors-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Optional: adds a background color to the page */
+  }
+  
+  .authors-content {
+    background-color: purple;
+    color: white;
+    padding: 30px 40px; /* Increased padding for better spacing */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    max-width: 600px; /* Max width for the content box */
+    width: 100%; /* Ensures content box takes full width up to max width */
+  }
+  
+  .authors-content h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .author-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff; /* Adds a white border around the image */
+  }
+  
