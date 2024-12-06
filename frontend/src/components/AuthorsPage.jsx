@@ -1,6 +1,7 @@
 import React from 'react';
 import './AuthorsPage.css';
-import authorImage from './Shilin.jpg'; // Ensure this path and extension are correct
+import authorImage from './Shilin.jpg';
+import authorImage1 from './suresh.jpg'; // Ensure this path and extension are correct
 
 function AuthorsPage() {
   return (
@@ -10,6 +11,8 @@ function AuthorsPage() {
         {/* Correct usage of the imported image */}
         <img src={authorImage} alt="Author" className="author-image" />
         <p>Varshini Shilin</p>
+        <img src={authorImage1} alt="Author" className="author-image" />
+        <p>Suresh Babu K</p>
         <p>This application was developed by a dedicated team of AI enthusiasts.</p>
         <p>
           An Artificial Intelligence and Data Science student at Kongu Engineering College, Erode.
